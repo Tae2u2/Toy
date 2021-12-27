@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  width: 390px;
+  height: 560px;
+  background-color: #ececec;
+  border-radius: 20px;
+}
+
+#output-view {
+  width: 370px;
+  height: 80px;
+  padding: 10px 30px;
+  margin: 10px 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: #ececec;
+  text-align: right;
+  box-shadow: inset -10px -10px 15px rgba(255, 255, 255, 0.5),
+    inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.clear {
+  width: 270px;
+  height: 80px;
+  border-radius: 40px;
+  border: 8px solid #f3c4c4;
+  box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+    10px 10px 15px rgba(70, 70, 70, 0.12);
+}
+.operator.result {
+  width: 170px;
+  height: 80px;
+  border-radius: 40px;
+  border: 8px solid #c1f7cc;
+}
+.operator.result:active {
+  border: 4px solid #c1f7cc;
+}
+.numberBtn,
+.operator {
+  width: 80px;
+  height: 80px;
+  border: 4px solid #ececec;
+  border-radius: 50%;
+  background-color: #ececec;
+  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5),
+    5px 5px 10px rgba(70, 70, 70, 0.12);
+}
+input[type="button"] {
+  margin: 5px 5px;
+  font-size: 1.2em;
+  font-weight: 500;
+  cursor: pointer;
+}
+.operator {
+  border: 4px solid #f9fac6;
+}
+input[type="button"]:active {
+  border: 4px solid #ececec;
+  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5),
+    5px 5px 10px rgba(70, 70, 70, 0.12),
+    inset -5px -5px 10px rgba(255, 255, 255, 0.5),
+    inset 5px 5px 10px rgba(70, 70, 70, 0.12);
+}
